@@ -1,0 +1,48 @@
+#getting-involved{
+  padding-bottom: 100px;
+  background: $secondary-color;
+  .row{
+    margin-bottom: 0;
+    padding-bottom: 100px;
+  }
+  .tabs{
+    margin-bottom: 25px;
+    li{
+      a{
+        color: $font-color;
+        font-weight: bold !important;
+        &:focus{
+          background-color: transparent;
+        }
+      }
+    }
+    .indicator{
+      background-color: $accent-color;
+    }
+  }
+  img{
+    float: right;
+    width: 75%;
+    padding: 50px 50px 0 0;
+    @media only screen and (max-width: 600px) {
+      float: none;
+      width: 100%;
+      padding: 50px 25px 25px 25px;
+    }
+  }
+
+  .tab-text{
+    padding-top: 75px;
+    @media only screen and (max-width: 991px) {
+      padding-top: 25px;
+    }
+    @media only screen and (max-width: 600px) {
+      padding-top: 0;
+    }
+  }
+
+  .btn-small{
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+}

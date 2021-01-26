@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pacific Education Management Information System (Pacific EMIS)</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="vendor/animate-css/animate.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Materialize -->
+  <link rel="stylesheet" href="vendor/materialize/materialize.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/stylesheet.css">
+
+<!--  <meta name="theme-color" content="#fafafa">-->
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browser-upgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!---------------------------------age Pre-Loader--------------------------------->
+  <div id="page-loader">
+    <div class="animated bounceInDown">
+      <div class="loader">
+        <div class="folding-cube">
+          <div class="cube1 cube"></div>
+          <div class="cube2 cube"></div>
+          <div class="cube4 cube"></div>
+          <div class="cube3 cube"></div>
+        </div>
+    </div>
+    </div>
+  </div>
+  <!---------------------------------Header--------------------------------->
+  <header id="home">
+    <div class="overlay">
+      <!-- Navigation -->
+      <nav class="fixed top">
+        <div class="container">
+          <a href="#" class="brand-logo"><img id="logo" src="img/logo-white.svg" alt=""></a>
+          <!-- Nav Links -->
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#why">Why Pacific EMIS</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#getting-involved">Getting Involved</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+          <!-- Menu Icon -->
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+      <!-- Side Nav & Links -->
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <img class="logo responsive-img" src="img/logo-white.svg" alt="">
+        </li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#why">Why Pacific EMIS</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#getting-involved">Getting Involved</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <!-- Intro -->
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="intro">
+              <h1>Pacific <span>EMIS</span></h1>
+              <h5>A modern high-end education management information system designed for small Pacific Island Nations</h5>
+              <a class="waves-effect waves-light btn-small" href="#why">Learn More</a>
+            </div>
+          </div>
+          <div class="col s12 m6 intro-img">
+            <img class="responsive-img" src="img/intro-image.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!---------------------------------Why--------------------------------->
+  <section id="why">
+    <div class="container">
+      <h4 class="section-title center uppercase"><span>Why</span> Pacific EMIS</h4>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col m4 content">
+          <img src="img/data.svg" class="wow fadeInUp" data-wow-delay=".2s">
+          <h6 class="center subtitle">Data Quality</h6>
+          <p>We strive to improve data quality in the challenging environment of the Pacific Islands by stricking a balance between high end software design behind the scene with simple to use user interface that meet the every day challenges of remote islands with low to no Internet connectivity.</p>
+        </div>
+        <div class="col m4 content">
+          <img src="img/open-source.svg" class="wow fadeInUp" data-wow-delay=".3s">
+          <h6 class="center subtitle">Open Source Software</h6>
+          <p>All the software written for the Pacific EMIS project is released as open source software. Due to its nature it is not an easy deployment and getting started can be a little daunting. But the source code is open and belongs to the community and always will.</p>
+        </div>
+        <div class="col m4 content">
+          <img src="img/support.svg" class="wow fadeInUp" data-wow-delay=".4s">
+          <h6 class="center subtitle">Supported by Experts</h6>
+          <p>While the software is freely available to all to use, learn from, adopt and customize it's often the case support is needed to get things to the next level. The Pacific EMIS has a growing list of experts able to support you in your undertaking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------------Features--------------------------------->
+  <Section id="features">
+    <div class="container">
+      <h4 class="section-title center uppercase">Pacific EMIS <span>Features</span></h4>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <img class="responsive-img wow fadeInLeft" src="img/web-app.png" alt="" data-wow-delay=".2s">
+        </div>
+        <div class="col s12 m6 text-wrapper">
+          <h6 class="subtitle">Web Application</h6>
+          <p>The Pacific EMIS web application is a modern single web page application based on the Microsoft SQL  Server (free Express edition works fine), .NET framework and TypeScript and Angular stack. The main web application is where users can access all their data, data analysis dashboards, dynamically generated reports and various related tools. This tool is meant for internal user such as the staff of national or district level departments of education.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6 text-wrapper">
+          <h6 class="subtitle">Reporting Server</h6>
+          <p>The Pacific EMIS is fully integrated with the enterprise grade open source reporting platform <a href="https://community.jaspersoft.com/">JasperReports</a>. Users of the Pacific EMIS can avail of a large collection of pre-built professionally developed reports and/or design their own custom reports to integrate with their deployment.</p>
+        </div>
+        <div class="col s12 m6">
+          <img class="responsive-img wow fadeInRight" src="img/reporting-server.png" alt="" data-wow-delay=".2s">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <img class="responsive-img wow fadeInLeft" src="img/survey-tool.png" alt="" data-wow-delay=".2s">
+        </div>
+        <div class="col s12 m6 text-wrapper">
+          <h6 class="subtitle">Education Survey Tool</h6>
+          <p>The Pacific EMIS Education Survey Tool is an Android app developed in Java designed to collect any sort of data that is inhenrently survey-like (e.g. school inspection, WASH). The app works with or without the Internet making it ideal in the Pacific context and beyond. Once the tablet does have access to the Internet it has the ability to sync to the Pacific EMIS cloud with full integration with the Pacific EMIS web app where users can access their data surveys and load them into the system for further analysis and reporting.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6 text-wrapper">
+          <h6 class="subtitle">Student Information System</h6>
+          <p>While an Education Management Information System is a higher level tool used within the national and/or district level departments of education it is not specifically designed to help the schools with their day to day operations and data management; this is typically the purpose of Student Information Systems (aka. School Information System). There are various SIS schools can opt for whether paid for, free open source, or custom designed. Currently the Pacific EMIS projects uses a adapted version of open source SIS OpenSIS. There is on-going work to integrate this open source SIS more intimately into the Pacific EMIS. But the integration should not stop at OpenSIS. The schools should have the liberty to choose their SIS when they want while still being able to feed in the EMIS in a consistent way for high level data analysis and reporting.</p>
+        </div>
+        <div class="col s12 m6">
+          <img class="responsive-img wow fadeInRight" src="img/student-info-sys.png" alt="" data-wow-delay=".2s">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <img class="responsive-img wow fadeInLeft" src="img/data-warehouse.png" alt="" data-wow-delay=".2s">
+        </div>
+        <div class="col s12 m6 text-wrapper">
+          <h6 class="subtitle">Data Warehouse</h6>
+          <p>People like to own their own data and be able to process it themselves. Whether this is because they need to present their data to their supervisors or have data requests from international donors, consultants or organizations. Sometimes the pre-built reports are just not sufficient. Accessing data in a normalized database is painstakingly difficult and often requires software programmers. To address this need the Pacific EMIS has a professional data warehouse that packages all data into formats easily understandable and processable by data analysists and statisticians without programming knowledge. The warehouse tables and views can be loaded into Excel or statistics software of your choice providing the ultimate flexibility.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6 text-wrapper">
+          <h6 class="subtitle">Office Application</h6>
+          <p>Most people are used to working with the common office applications such as Microsoft Word, Excel and Power Point. Using the Data Warehouse the staff can pull in the data into Excel for publishing into their own reports and presentations. We even have tools to help in the preparation of data reports such as Annual Education Statistics Digest.</p>
+        </div>
+        <div class="col s12 m6">
+          <img class="responsive-img wow fadeInRight" src="img/office-app.png" alt="" data-wow-delay=".2s">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <img class="responsive-img wow fadeInLeft" src="img/mobile.png" alt="" data-wow-delay=".2s">
+        </div>
+        <div class="col s12 m6 text-wrapper">
+          <h6 class="subtitle">Mobile Open Education Data</h6>
+          <p>In a push to continuously improve the dissemination of data and information we have pioneered the Pacific Open Education Data app available in both the Android and iOS stores to the general public. This public open data app is a work in progress that aims to put the data and information directly in the palm of your hands. Whether you are a teacher, principal, data analyst, a high level decision maker, a researcher or a consultant we think you will enjoy this app and would appreciate your feedback to help us constantly improve it going forward.</p>
+          <a class="waves-effect waves-light btn-small"><i class="icon ion-logo-android"></i>Download For Android</a>
+          <a class="waves-effect waves-light btn-small"><i class="icon ion-logo-apple"></i>Download For <span class="ios">i</span>OS</a>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+
+  <!---------------------------------Getting Involved--------------------------------->
+  <section id="getting-involved">
+    <div class="container">
+      <h4 class="section-title center uppercase">Getting <span>Involved</span></h4>
+    </div>
+    <div class="container">
+      <ul id="tabs-swipe-demo" class="tabs center-align">
+        <li class="tab col s3"><a href="#test-swipe-1">Documentation</a></li>
+        <li class="tab col s3"><a href="#test-swipe-2">Source Code</a></li>
+        <li class="tab col s3"><a href="#test-swipe-3">Community</a></li>
+      </ul>
+
+      <div id="test-swipe-1" class="col s12">
+        <div class="row">
+          <div class="col s12 m6">
+            <img class="responsive-img" src="img/documentation.png" alt="">
+          </div>
+          <div class="col s12 m6 tab-text">
+            <h6 class="subtitle">Documentation</h6>
+            <p>Since there are various components to the Pacific EMIS project there is also various documentation/ For example, there is documentation for users of the system, for systems administrators and those involved in the maintenance of the system and for developers who contribute to the software development. All the documentation is accessed from the same place though adopting countries may also have their own additional documentation</p>
+            <a class="waves-effect waves-light btn-small center" href="http://docs.pacific-emis.org/" target="_blank">Project Documentation</a>
+          </div>
+        </div>
+      </div>
+      <div id="test-swipe-2" class="col s12">
+        <div class="row">
+          <div class="col s12 m6">
+            <img class="responsive-img" src="img/source-code.png" alt="">
+          </div>
+          <div class="col s12 m6 tab-text">
+            <h6 class="subtitle">Source Code</h6>
+            <p>As stated above, essentially all components of the Pacific EMIS project is open source in nature. There are several components to this large initiative and the source code can be found in different places, in different programming languages, based on different other open source frameworks.</p>
+            <a href="" class="waves-effect waves-light btn-small">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <div id="test-swipe-3" class="col s12">
+        <div class="row">
+          <div class="col s12 m6">
+            <img class="responsive-img" src="img/community.png" alt="">
+          </div>
+          <div class="col s12 m6 tab-text">
+            <h6 class="subtitle">Community</h6>
+            <p>There are already users of the Pacific EMIS project constantly improving their data. You can join also. Note that this is a large initiative with ambitious goals and getting started is not easy. But we are here to help so if you are interested you can simply contact us by email and will we do what we can to help. We are also starting a mailing lists where will post announcements (General Mailing List) another one for technical support (Technical Mailing List).</p>
+            <a href="" class="waves-effect waves-light btn-small">Direct Contacts</a>
+            <a href="" class="waves-effect waves-light btn-small">General Email List</a>
+            <a href="" class="waves-effect waves-light btn-small">Technical Email List</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---------------------------------Parallax--------------------------------->
+  <div class="parallax-container">
+    <div class="overlay valign-wrapper">
+      <div class="container">
+        <div class="row">
+          <h4 class="center wow pulse" data-wow-delay=".2s"><span>"</span>Together we can enhance data management and support our decision makers to improve the education system for our children and future generations<span>"</span></h4>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/parallax.jpg" alt=""></div>
+  </div>
+  <!---------------------------------About--------------------------------->
+  <section id="about">
+    <div class="container">
+      <h4 class="section-title center uppercase"><span>About</span> Pacific EMIS</h4>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <img class="responsive-img wow fadeIn" data-wow-delay=".2s" src="img/about.jpg" alt="">
+        </div>
+        <div class="col s12 m6">
+          <h6 class="subtitle">About the Pacific EMIS</h6>
+          <p>The Pacific EMIS project has roots dating back over a decade and has been in used in various countries to various degrees. However, since 2016 it has been completely revamped and modernized into this open source project. What is left from its roots is mostly the data model and lots of battle tested data management procedures behind the scene.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---------------------------------Footer--------------------------------->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <p class="center">The content on this website, of which pacific-emis.org is the author, is licensed under a Creative Commons Attribution 4.0 International License. pacific-emis.org is not the author of any of the licenses reproduced on this site or licenses used in its software. Questions about the copyright in a license should be directed to the license steward.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/modernizr/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="vendor/jquery/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="scripts/plugins.js"></script>
+  <script src="vendor/wow/wow.min.js"></script>
+  <script src="vendor/materialize/script-materialize.min.js"></script>
+  <script src="scripts/custom-script.js"></script>
+
+  <!--Google Analytics: change UA-XXXXX-Y to be your site's ID.-->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
