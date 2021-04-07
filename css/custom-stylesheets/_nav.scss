@@ -46,7 +46,7 @@ nav{
 }
 
 .sidenav{
-  background: linear-gradient(180deg, rgb(47, 132, 200) 0%, rgb(113, 76, 221) 100%);
+  background: linear-gradient(120deg, darken($primary-color, 10%) 0%, lighten($primary-color, 10%) 75%);
   img.logo{
     padding: 50px 50px 25px 50px;
   }

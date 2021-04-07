@@ -166,7 +166,7 @@ nav {
       color: #fab400; }
 
 .sidenav {
-  background: linear-gradient(180deg, #2f84c8 0%, #714cdd 100%); }
+  background: linear-gradient(120deg, #0d4c8b 0%, #1780e7 75%); }
   .sidenav img.logo {
     padding: 50px 50px 25px 50px; }
   .sidenav li a {
@@ -237,25 +237,24 @@ header {
     @media only screen and (max-width: 600px) {
       #features .text-wrapper {
         padding-top: 0; } }
-    #features .text-wrapper span.ios {
-      text-transform: lowercase; }
   #features img {
     padding: 25px; }
     @media only screen and (max-width: 600px) {
       #features img {
         padding: 0; } }
-  #features .btn-small {
-    height: 36px; }
-    #features .btn-small i {
-      margin-right: 10px;
-      line-height: 32px; }
+  #features .download-btn {
+    width: 125px;
+    height: auto;
+    margin-bottom: 5px;
+    margin-right: 5px; }
+    #features .download-btn img {
+      padding: 0; }
 
 #getting-involved {
-  padding-bottom: 100px;
-  background: rgba(238, 238, 238, 0.7); }
+  background: rgba(238, 238, 238, 0.7);
+  padding-bottom: 120px; }
   #getting-involved .row {
-    margin-bottom: 0;
-    padding-bottom: 100px; }
+    margin-bottom: 0; }
   #getting-involved .tabs {
     margin-bottom: 25px; }
     #getting-involved .tabs li a {
