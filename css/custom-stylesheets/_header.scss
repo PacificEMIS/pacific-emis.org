@@ -1,6 +1,6 @@
 header{
   width: 100%;
-  min-height: 730px;
+  min-height: 750px;
   height: auto;
   background: $header-background;
   -webkit-background-size: cover;
@@ -9,6 +9,10 @@ header{
   .row{
   padding:100px 0;
   }
+}
+
+.header-small {
+  min-height: 0px;
 }
 
 .intro{
