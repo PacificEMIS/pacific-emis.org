@@ -98,33 +98,32 @@
       <div class="row">
 	<div class="col s12">
 	  <h4 class="content-title uppercase">Contact Us</h4>
-	  <form target="_blank" action="https://api.staticforms.xyz/submit" method="POST">
+
+	  <form id="contact-form">
+	    <input type="hidden" name="contact_number" value="697483">
 	    <div class="row">
 	      <div class="input-field col s12 m6">
-		<input placeholder="Full Name" id="name" name="name" type="text" class="validate" required>
-		<label for="full_name">Full Name</label>
+		<label>Your Name</label>
+		<input id="from_name" name="from_name" type="text" class="validate" required>
 	      </div>
 	      <div class="input-field col s12 m6">
-		<input id="email" name="email" type="email" class="validate" placeholder="Email Address" required>
-		<label for="email">Email</label>
+		<label>Your Email</label>	
+		<input id="reply_to" name="reply_to" type="email" class="validate" required>
 	      </div>
 	    </div>
 	    <div class="row">
 	      <div class="input-field col s12">
-		<textarea id="textarea1" name="message" class="materialize-textarea" placeholder="Your Message" required></textarea>
-		<label for="textarea1">Textarea</label>
+		<label for="textarea1">Message</label>		
+		<textarea id="textarea1" name="message" class="materialize-textarea" required></textarea>
 	      </div>
 	    </div>
-
-	    <input type="text" name="honeypot" style="display:none">
-	    <input type="hidden" name="accessKey" value="a2c76b1e-579b-4df8-b9c3-a0e62761f8e5">
-	    <input type="hidden" name="subject" value="Contact us from Pacific EMIS Website" />
-	    <input type="hidden" name="replyTo" value="@">
-	    <input type="hidden" name="redirectTo" value="https://www.pacific-emis.org/contact-success.html">
-	    <div class="g-recaptcha" data-sitekey="6LeWWVUfAAAAABACmyM5pOFbidN4NPs_atnducwu" data-callback="enableSubmitButton"></div>
+	    
+	    <!-- <input type="hidden" name="redirectTo" value="https://www.pacific-emis.org/contact-success.html"> -->
+	    <div class="g-recaptcha" data-sitekey="6LfuWV4qAAAAAEpiFix8bAZyDbgueMJvRVt_5mSI"></div> <!-- data-callback="enableSubmitButton" -->
 	    <br/>	    
-	    <button type="submit" id="submitButton" class="waves-effect waves-light btn" disabled>Send</button>
+	    <input type="submit" class="waves-effect waves-light btn" value="Send">
 	  </form>
+	  
 	</div>
 	  	        
       </div>
@@ -148,16 +147,57 @@
   <script src="vendor/wow/wow.min.js"></script>
   <script src="vendor/materialize/js/materialize.min.js"></script>
   <script src="scripts/custom-script.js"></script>
+  
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+	// https://dashboard.emailjs.com/admin/account
+	emailjs.init({
+	    publicKey: "sFeERTuR8RTq1pMcI",
+	});
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function() {
+	document.getElementById('contact-form').addEventListener('submit', function(event) {
+	    event.preventDefault();
+
+	    // Get the reCAPTCHA response token
+	    const recaptchaResponse = grecaptcha.getResponse();
+
+	    if (recaptchaResponse.length === 0) {
+		alert('Please complete the reCAPTCHA to verify you are not a bot.');
+		return;
+	    }
+	    // these IDs from the previous steps
+	    emailjs.sendForm('service_5wfrd5g', 'template_8flghba', this)
+	        .then(() => {
+		    console.log('SUCCESS!');
+		    // Reset the form and reCAPTCHA after success
+		    document.getElementById('contact-form').reset();
+		    grecaptcha.reset(); // Reset reCAPTCHA
+		    alert('Thank you! We will be in touch soon.');
+		}, (error) => {
+		    console.log('FAILED...', error);
+		});
+	});
+    }
+  </script>
+
+  <!-- Google reCAPTCHA API -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-  <script>
-    function enableSubmitButton() {
-      document.getElementById('submitButton').disabled = false;
-    }
-    function disableSubmitButton() {
-      document.getElementById('submitButton').disabled = true;
-    }
-  </script>  
+  <!-- <script> -->
+  <!--   function enableSubmitButton() { -->
+  <!--     document.getElementById('submitButton').disabled = false; -->
+  <!--   } -->
+  <!--   function disableSubmitButton() { -->
+  <!--     document.getElementById('submitButton').disabled = true; -->
+  <!--   } -->
+  <!-- </script> -->
+
+  
   <!--Google Analytics: change UA-XXXXX-Y to be your site's ID.-->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
